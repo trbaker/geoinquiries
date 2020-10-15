@@ -1,0 +1,52 @@
+﻿Area,electoral_votes,Vote_type
+Alabama,9,winner take all
+Alaska,3,winner take all
+Arizona,11,winner take all
+Arkansas,6,winner take all
+California,55,winner take all
+Colorado,9,winner take all
+Connecticut,7,winner take all
+Delaware,3,winner take all
+District of Columbia,3,winner take all
+Florida,29,winner take all
+Georgia,16,winner take all
+Hawaii,4,winner take all
+Idaho,4,winner take all
+Illinois,20,winner take all
+Indiana,11,winner take all
+Iowa,6,winner take all
+Kansas,6,winner take all
+Kentucky,8,winner take all
+Louisiana,8,winner take all
+Maine,4,Conressional district
+Maryland,10,winner take all
+Massachusetts,11,winner take all
+Michigan,16,winner take all
+Minnesota,10,winner take all
+Mississippi,6,winner take all
+Missouri,10,winner take all
+Montana,3,winner take all
+Nebraska,5,Congressional district
+Nevada,6,winner take all
+New Hampshire,4,winner take all
+New Jersey,14,winner take all
+New Mexico,5,winner take all
+New York,29,winner take all
+North Carolina,15,winner take all
+North Dakota,3,winner take all
+Ohio,18,winner take all
+Oklahoma,7,winner take all
+Oregon,7,winner take all
+Pennsylvania,20,winner take all
+Rhode Island,4,winner take all
+South Carolina,9,winner take all
+South Dakota,3,winner take all
+Tennessee,11,winner take all
+Texas,38,winner take all
+Utah,6,winner take all
+Vermont,3,winner take all
+Virginia,13,winner take all
+Washington,12,winner take all
+West Virginia,5,winner take all
+Wisconsin,10,winner take all
+Wyoming,3,winner take all
