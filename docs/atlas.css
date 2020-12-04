@@ -12,7 +12,7 @@ h2{font-family:Arial;}
 .w3-card-4,.w3-hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
 .w3-card-4,.w3-hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
 .w3-container:after,.w3-container:before,.w3-panel:after,.w3-panel:before,.w3-row:after,.w3-row:before,.w3-row-padding:after,.w3-row-padding:before,
-.w3-container{align: right;}
+.w3-container{float: right; right: 10px; padding: 10px;}
 
 ul {font-family:Arial; font-size:15px;}
 p {font-size:15px; font-family:Arial;margin:10px 0}
