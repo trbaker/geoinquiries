@@ -1,7 +1,9 @@
 /* CSS */
 
 html{
-	box-sizing:border-box}*,
+	box-sizing:border-box,
+	background-clor: white
+	}*,
 
 /*     */
 h1{font-size:36px}
