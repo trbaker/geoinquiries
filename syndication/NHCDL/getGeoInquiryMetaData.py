@@ -1,5 +1,5 @@
 from arcgis.gis import GIS
-gis = GIS('https://www.arcgis.com', 'tbakerk12', 'naish101')
+gis = GIS('https://www.arcgis.com', '', '')
 import csv
 print('')
 print("CR_Title,CR_Author_Name,CR_Provider,CR_Create_Date,CR_Provider_St,CR_Language,CR_URL,CR_Media_Formats,CR_Material_Type,CR_Subject,CR_Keywords,CR_COU_TITLE,CR_COU_URL,CR_Abstract,CR_Educational_Use,CR_Primary_User,CR_Sublevel,CR_WORKFLOW_STATE")
