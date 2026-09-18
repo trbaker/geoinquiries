@@ -183,6 +183,10 @@
     .scale .bar { display: flex; height: 6px; width: 96px; border: 1px solid var(--muted); }
     .scale .bar span { flex: 1; }
     .scale .bar span:nth-child(odd) { background: var(--muted); }
+    .license { display: flex; justify-content: center; margin-top: 28px; }
+    .license a { display: inline-block; line-height: 0; border-radius: 3px; }
+    .license a:focus-visible { outline: 3px solid var(--glow); outline-offset: 3px; }
+    .license img { display: block; width: 88px; height: 31px; }
     @media (prefers-reduced-motion: reduce) {
       .btn { transition: none; }
       .btn:hover { transform: none; }
@@ -248,6 +252,12 @@
       </div>
       <div class="scale"><div class="bar"><span></span><span></span><span></span><span></span></div><span>0 — 100 km</span></div>
     </footer>
+
+    <div class="license">
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license noopener" target="_blank">
+        <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg" width="88" height="31" alt="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License">
+      </a>
+    </div>
   </div>
 </body>
 </html>
