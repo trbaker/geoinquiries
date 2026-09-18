@@ -179,6 +179,9 @@
     .credit { display: grid; gap: 2px; }
     .credit a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
     .credit a:hover, .credit a:focus-visible { color: var(--glow); }
+    .links { display: flex; flex-wrap: wrap; gap: 6px 18px; }
+    .links a { color: var(--muted); text-decoration: none; }
+    .links a:hover, .links a:focus-visible { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
     .scale { display: flex; align-items: flex-end; gap: 8px; font-family: "IBM Plex Mono", monospace; font-size: 12px; }
     .scale .bar { display: flex; height: 6px; width: 96px; border: 1px solid var(--muted); }
     .scale .bar span { flex: 1; }
@@ -250,6 +253,11 @@
         <span>GeoInquiries Lab</span>
         <span>Designed by <a href="https://tbaker.com">Tom Baker</a></span>
       </div>
+      <nav class="links" aria-label="Site policies">
+        <a href="https://trbaker.github.io/geoinquiries/support/privacy.html">Privacy</a>
+        <a href="https://trbaker.github.io/geoinquiries/support/accessibility.html">Accessibility</a>
+        <a href="https://trbaker.github.io/geoinquiries/support/termsofuse.html">Terms of Use</a>
+      </nav>
       <div class="scale"><div class="bar"><span></span><span></span><span></span><span></span></div><span>0 — 100 km</span></div>
     </footer>
 
