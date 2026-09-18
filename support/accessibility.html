@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZWNB3WHS6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HZWNB3WHS6');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Accessibility conformance, features, known limitations, and feedback for GeoInquiries 2.0 web apps (WCAG 2.1 AA).">
+<title>Accessibility Statement | GeoInquiries 2.0</title>
+<style>
+  :root{
+    --ink:#1B2A3C; --ink-soft:#4A5768; --sheet:#EEF1EC; --rule:#CFD6D0;
+    --brass:#B4842D; --brass-text:#8A6520; --link:#2E5E9E;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--sheet);color:var(--ink);font:16px/1.6 "Source Sans 3","Segoe UI",Helvetica,Arial,sans-serif}
+  a{color:var(--link)}
+  a:focus-visible,button:focus-visible{outline:3px solid var(--brass);outline-offset:2px}
+  .skip{position:absolute;left:-999px;top:8px;background:#fff;color:var(--ink);padding:8px 12px;border-radius:6px;z-index:10}
+  .skip:focus{left:8px}
+  header{background:var(--ink);color:#fff;border-bottom:4px solid var(--brass);padding:18px 20px}
+  header .wrap{max-width:820px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 20px}
+  header .brand{font-family:Georgia,"Times New Roman",serif;font-weight:700;font-size:1.15rem;color:#fff;text-decoration:none}
+  header nav{margin-left:auto;display:flex;flex-wrap:wrap;gap:4px 16px;font-size:.95rem}
+  header nav a{color:#fff;text-decoration:none;border-bottom:2px solid transparent;padding-bottom:2px}
+  header nav a:hover{border-bottom-color:rgba(255,255,255,.6)}
+  header nav a[aria-current="page"]{border-bottom-color:var(--brass);font-weight:600}
+  main{max-width:820px;margin:0 auto;padding:32px 20px 48px}
+  article{background:#fff;border:1px solid var(--rule);border-radius:8px;padding:32px 36px}
+  h1{font-family:Georgia,"Times New Roman",serif;font-size:2rem;line-height:1.15;margin:0 0 6px}
+  .updated{color:var(--ink-soft);margin:0 0 24px;font-size:.95rem}
+  h2{font-family:Georgia,"Times New Roman",serif;font-size:1.35rem;margin:30px 0 8px;padding-top:18px;border-top:1px solid var(--rule)}
+  h2:first-of-type{border-top:0;padding-top:0;margin-top:18px}
+  h3{font-size:1.05rem;margin:18px 0 6px}
+  p,li{max-width:70ch}
+  ul{padding-left:22px}
+  li{margin:4px 0}
+  table{border-collapse:collapse;width:100%;font-size:.95rem;margin:10px 0 16px}
+  th,td{text-align:left;vertical-align:top;padding:8px 10px;border-bottom:1px solid var(--rule)}
+  th{background:#F7F8F6}
+  .note{background:#F7F8F6;border-left:4px solid var(--brass);padding:10px 14px;margin:16px 0;border-radius:0 6px 6px 0}
+  footer{max-width:820px;margin:0 auto;padding:0 20px 40px;color:var(--ink-soft);font-size:.9rem}
+  footer nav{display:flex;flex-wrap:wrap;gap:4px 16px;margin-bottom:8px}
+  @media (max-width:600px){article{padding:22px 18px} h1{font-size:1.6rem}}
+  .visually-hidden{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+  <div class="wrap">
+    <a class="brand" href="https://trbaker.github.io/geoinquiries/">GeoInquiries 2.0</a>
+    <nav aria-label="Policies"><a href="privacy.html">Privacy</a><a href="accessibility.html" aria-current="page">Accessibility</a><a href="termsofuse.html">Terms of use</a></nav>
+  </div>
+</header>
+<main id="main">
+  <article>
+    <h1>Accessibility Statement</h1>
+    <p class="updated">Last updated September 18, 2026</p>
+
+    <p>GeoInquiries 2.0 apps are meant to be usable by every student in a classroom, including students who use a keyboard instead of a mouse, a screen reader, screen magnification, or high-contrast settings. This statement describes how <em>A Nation Divided: Civil War Map Missions</em> measures up, what has been done to make it accessible, and where it still falls short.</p>
+
+    <h2>Conformance target</h2>
+    <p>The app is designed to conform to the <a href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines (WCAG) 2.1</a> at Level AA. As of the date above, the app's own interface (the header, the GeoInquiry panel, questions, dialogs, layer list, and legend) meets every Level A and AA success criterion we tested. The interactive map is provided by a third party, Esri's ArcGIS Maps SDK for JavaScript, and it partially supports the guidelines; the limitations are listed below along with the alternatives the app provides.</p>
+
+    <h2>What the app does for accessibility</h2>
+    <h3>Keyboard</h3>
+    <ul>
+      <li>Every control is reachable and operable with the keyboard, and focus is always visible as a thick gold ring.</li>
+      <li>Every map task has a keyboard route that scores identically to using the mouse: in <strong>Ask</strong>, a list of states can be used instead of clicking the map; in <strong>Acquire</strong>, a "Calculate the distance" button replaces the pointer-only measuring tool; in <strong>Explore</strong>, the map can be panned with the arrow keys and zoomed with + and −, then "Guess the map center" records a guess.</li>
+      <li>Dialogs (How to play, Sources, Teacher notes) keep keyboard focus inside them while open, close with Escape, and return focus to the button that opened them.</li>
+    </ul>
+    <h3>Screen readers</h3>
+    <ul>
+      <li>The page uses landmark regions, a single top-level heading, and a logical heading order, so it can be navigated by structure.</li>
+      <li>Section tabs announce their state (current, completed, not started, or locked), and each badge in the header carries its status as text, for example "1: Ask complete."</li>
+      <li>Score changes, badges earned, and map loading status are announced as status messages.</li>
+      <li>Answer feedback is delivered in text, not only by color, and every form field has a label.</li>
+    </ul>
+    <h3>Vision</h3>
+    <ul>
+      <li>All text meets or exceeds a 4.5:1 contrast ratio and all control boundaries meet 3:1.</li>
+      <li>Battle results are shown by shape as well as color: a circle for a Union victory, a square for a Confederate victory, a triangle for other outcomes. The legend names each shape.</li>
+      <li>In the event-ordering task, each row is marked "In order" or "Out of order" in words, not only by tint.</li>
+      <li>The layout reflows without horizontal scrolling down to a 320-pixel-wide viewport and remains usable at 200% zoom.</li>
+      <li>The app honors the operating system's reduced-motion setting, and nothing flashes or moves on its own.</li>
+    </ul>
+
+    <h2>Known limitations</h2>
+    <ul>
+      <li><strong>The map is a picture.</strong> The map itself is drawn on a canvas and has no text equivalent. Clicking a state, battle, or milestone opens a pop-up with its details in text, and every fact needed to answer the questions is also stated in the section text and feedback, but a screen-reader user cannot survey the whole map at once. A table view of the battle data is planned.</li>
+      <li><strong>The measuring tool needs a pointer.</strong> Esri's distance-measurement widget places points with mouse or touch only. The app's "Calculate the distance" button is the keyboard alternative.</li>
+      <li><strong>Map pop-ups and controls come from Esri.</strong> The zoom buttons, pop-ups, and attribution are Esri components. They are keyboard-operable in our testing, but their behavior is governed by Esri's own accessibility work, not ours.</li>
+      <li><strong>Small controls.</strong> A few controls, such as the arrows in the event-ordering task, are smaller than the 44-pixel target recommended at WCAG Level AAA.</li>
+      <li><strong>Modern boundaries.</strong> The map uses present-day state outlines; this is noted in the app's Teacher notes but is a content limitation rather than a technical one.</li>
+    </ul>
+
+    <h2>How we tested</h2>
+    <ul>
+      <li>Automated scanning with axe-core across each section of the app, each dialog, and both modes.</li>
+      <li>Measured contrast ratios for every text and background color pair, and for map symbols against the basemap.</li>
+      <li>Manual keyboard walkthroughs of every task and dialog, focus-order checks, reflow at 320 pixels, and 200% zoom.</li>
+    </ul>
+    <p>The app has not yet been evaluated with a screen reader by a person who relies on one. If you are such a user and are willing to try it, we would value your feedback.</p>
+
+    <h2>Compatibility</h2>
+    <p>The app is built with standard HTML, CSS, and JavaScript and the ArcGIS Maps SDK for JavaScript 4.30. It is intended to work with current versions of Chrome, Edge, Firefox, and Safari on desktop and tablet, and with the screen readers commonly paired with them (NVDA, JAWS, VoiceOver, and TalkBack). It requires JavaScript and an internet connection to <code>js.arcgis.com</code> and <code>arcgis.com</code> for the map; if the map cannot load, the questions still run and the map tasks are skipped.</p>
+
+    <h2>Feedback</h2>
+    <p>If you encounter a barrier, please tell us what you were trying to do, which browser and assistive technology you were using, and what happened. Reports can be sent to Tom Baker through <a href="https://tbaker.com">tbaker.com</a>. We aim to respond within ten business days.</p>
+
+  </article>
+</main>
+<footer>
+  <nav aria-label="Policy pages"><a href="privacy.html">Privacy</a><a href="accessibility.html" aria-current="page">Accessibility</a><a href="termsofuse.html">Terms of use</a></nav>
+  <p>GeoInquiries 2.0 apps are designed by <a href="https://tbaker.com">Tom Baker</a> and released under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+</footer>
+</body>
+</html>
